@@ -1,0 +1,43 @@
+
+body{
+  background-color: cadetblue;
+  font-family: consolas;
+  font-weight: lighter;
+  font-size: 16px;
+}
+form {
+  margin-top:10%;
+  margin-left:35%;
+  width:400px;
+}
+input {
+  font-family:consolas;
+  font-style: initial;
+  font-size: 20px ;
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC;
+}
+button {
+  font-family:consolas;
+  font-size: 20px;
+  padding:10px;
+  border-radius: 6px;
+  border-color: rgb(207, 9, 9);
+}
+label {
+  cursor:pointer
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+#form-switch:checked~#register-form {
+  display:block
+}
+#form-switch:checked~#login-form {
+  display:none
+}

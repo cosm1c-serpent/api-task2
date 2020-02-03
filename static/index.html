@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<input type='checkbox' id='form-switch'>
+
+<form id='login-form' action="/" method='post'>
+  <input type="text" placeholder="Username" name="username"  required>
+  <input type="password" placeholder="Password" name="password"  required>
+  <button type='submit'>Login</button>
+  <label for='form-switch'><span>Register</span></label>
+</form>
+
+<form id='register-form' action="/register" method='post'>
+  <input type="text" placeholder="Username" name="username" minlength="4" required>
+  <input type="email" placeholder="Email" name="email" required>
+  <input type="password" placeholder="Password" name="password" minlength="8" required>
+  <input type="password" placeholder="Confirm Password" name="confirm_password"  required>
+  <button type='submit'>Register</button>
+  <label for='form-switch'>Already Member ? Log In Now..</label>
+</form>
+<!-- partial -->
+  
+</body>
+</html>
